@@ -123,10 +123,11 @@ export const platformLinks = [
 ];
 
 export const communityLinks = [
+  { href: "/home", text: "Home" },
   { href: "/about", text: "About" },
-  { href: "/contact", text: "Contact Us" },
-  { href: "/businessman", text: "Businessman" },
-  { href: "/student", text: "Student" },
+  { href: "/cars", text: "Cars" },
+  { href: "/contact", text: "Contact" },
+  { href: "/home", text: "Privacy Policy" },
 ];
 export const blogLinks = [{ href: "/blog", text: "Blogs" }];
 
