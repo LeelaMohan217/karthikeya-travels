@@ -45,7 +45,7 @@ const Cars = () => {
         whileInView="visible"
         transition={{ duration: 0.6 }}
         viewport={{ once: false, amount: 0.2 }}
-        className="text-3xl font-bold text-orange-600 mb-10 text-center"
+        className="text-2xl md:text-4xl  font-bold text-orange-600 mb-10 text-center"
       >
         Our car options
       </motion.h1>

@@ -30,15 +30,24 @@ const Details = () => {
             className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-600"
             variants={fadeInUp}
           >
-            Ready to Elevate Your Business?
+            Ready to Travel in Comfort and Style?
           </motion.h2>
 
           <motion.p
-            className="font-medium text-sm lg:text-base text-neutral-600 text-center mt-4"
+            className="font-medium text-base lg:text-xl text-neutral-600 text-center mt-4"
             variants={fadeInUp}
           >
-            Contact us today to discuss how our custom software solutions can
-            take your business to the next level. Let's innovate together!
+            Discover affordable, reliable, and safe travel with our premium car
+            services.
+          </motion.p>
+          <motion.p
+            className="font-thin text-sm lg:text-base text-center mt-4"
+            variants={fadeInUp}
+          >
+            Whether you're heading out for a family vacation, a business trip,
+            or a weekend escape, we’ve got the perfect ride for you. Our
+            well-maintained fleet, professional drivers, and unbeatable prices
+            ensure your journey is as smooth as your destination is exciting.
           </motion.p>
 
           <motion.div className="mt-8" variants={fadeInUp}>
