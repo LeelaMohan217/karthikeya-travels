@@ -43,10 +43,10 @@ const About = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="space-y-5 text-center md:text-left"
         >
-          <h2 className="text-2xl font-semibold text-black">
+          <h2 className="text-2xl font-semibold text-black text-left">
             Explore the World with Us
           </h2>
-          <p className="text-black text-base leading-relaxed">
+          <p className="text-black text-base leading-relaxed text-left">
             At{" "}
             <span className="text-orange-500 font-semibold">
               Sri Karthikeya Travels
@@ -55,7 +55,7 @@ const About = () => {
             Whether you're looking to unwind on a beach, hike through mountains,
             or explore vibrant cities, we have the perfect package for you.
           </p>
-          <p className="text-black text-base leading-relaxed">
+          <p className="text-black text-base leading-relaxed text-left">
             With personalized itineraries, experienced guides, and 24/7 support,
             our mission is to make your journey as seamless and enjoyable as
             possible. Join thousands of happy travelers who trust us for their

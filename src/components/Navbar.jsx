@@ -39,8 +39,8 @@ const Navbar = () => {
           <div className="flex justify-between items-center transition-all duration-500">
             <div className="flex items-center">
               <a href="/" className="flex items-center flex-shrink-0">
-                <span className="text-sm md:text-base lg:text-xl sm:block tracking-tight text-orange-600 font-semibold transition-colors duration-300">
-                  SRI KARTHIKEYA TRAVELS
+                <span className="text-xl md:text-2xl lg:text-3xl sm:block tracking-tight text-orange-600 font-bold transition-colors duration-300">
+                  SK
                 </span>
               </a>
             </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
             <div>
               <a
                 href="#hero"
-                className="hidden lg:block bg-orange-600 text-white font-normal text-base lg:text-base px-4 md:px-6 py-3 rounded hover:bg-orange-700 transition-all duration-300"
+                className="hidden lg:block bg-orange-600 text-white font-normal rounded-sm text-base lg:text-base px-4 md:px-6 py-3 hover:bg-orange-700 transition-all duration-500"
               >
                 <span>Get started</span>
               </a>
