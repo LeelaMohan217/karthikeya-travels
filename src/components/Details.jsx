@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -18,7 +19,7 @@ const staggerContainer = {
 const Details = () => {
   return (
     <div className="bg-gradient-to-l from-neutral-50 to-neutral-100">
-      <div className="max-w-7xl mx-auto py-8 md:py-14 px-8">
+      <div className="max-w-7xl mx-auto py-16 px-2 xl:px-0">
         <motion.div
           className="flex flex-col items-center"
           variants={staggerContainer}
@@ -27,7 +28,7 @@ const Details = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <motion.h2
-            className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-600"
+            className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-indigo-950"
             variants={fadeInUp}
           >
             Ready to Travel in Comfort and Style?
@@ -41,7 +42,7 @@ const Details = () => {
             services.
           </motion.p>
           <motion.p
-            className="font-thin text-sm lg:text-base text-center mt-4"
+            className="font-normal text-sm lg:text-base text-center mt-4 text-indigo-950"
             variants={fadeInUp}
           >
             Whether you're heading out for a family vacation, a business trip,
@@ -51,12 +52,12 @@ const Details = () => {
           </motion.p>
 
           <motion.div className="mt-8" variants={fadeInUp}>
-            <a
-              href="/contact"
-              className="px-4 md:px-6 py-3 font-normal rounded-sm text-sm md:text-base text-white text-center transition duration-500 ease-in-out bg-orange-600 hover:bg-orange-700 active:bg-orange-700 focus:outline-none focus:ring focus:ring-red-300"
+            <Link
+              to="/carsPage"
+              className="px-8 md:px-12 py-3 font-normal rounded-full text-sm md:text-base text-white text-center transition duration-500 ease-in-out bg-indigo-950 border-1 border-indigo-950 hover:text-indigo-950 hover:bg-white"
             >
               Get Started
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

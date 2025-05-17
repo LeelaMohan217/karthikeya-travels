@@ -1,41 +1,27 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Cars from "./components/Cars";
-import Details from "./components/Details";
-import Details1 from "./components/Details1";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CarsPage from "./pages/CarsPage";
+import About from "./pages/About";
+import Cardetails from "./pages/Cardetails";
+import Form from "./pages/Form";
+
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-
-      <div id="hero">
-        <Hero />
-      </div>
-
-      <div id="about">
-        <About />
-      </div>
-
-      <div id="details1">
-        <Details1 />
-      </div>
-
-      <div id="cars">
-        <Cars />
-      </div>
-
-      <div id="details">
-        <Details />
-      </div>
-
-      <div id="contact">
-        <Footer />
-      </div>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/carspage" element={<CarsPage />} />
+        <Route path="/cardetails" element={<Cardetails />} />
+        <Route path="/form" element={<Form />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -1,54 +1,73 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  containerVariants,
+  itemVariants,
+  imageVariants,
+} from "../utils/motionVariants";
+import car from "../assets/cars/svg/car.svg"; // adjust path as needed
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image */}
-      <img
-        src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1950&q=80"
-        alt="Car Travel"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-black/60" />
+    <section className="w-full h-screen flex items-center bg-gradient-to-t from-neutral-50 to-neutral-100">
+      <div className="max-w-7xl mx-auto py-4 lg:px-8 px-2 xl:px-0">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {/* Left Content */}
+          <div className="text-left">
+            <motion.p
+              className="text-sm font-medium text-indigo-950 uppercase tracking-wider"
+              variants={itemVariants}
+            >
+              Plan Your Destination
+            </motion.p>
 
-      {/* Animated Text Content */}
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto w-full px-6 sm:px-8 xl:px-0 text-left text-white space-y-6">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ amount: 0.6 }}
-            className="text-3xl w-full sm:text-5xl md:text-6xl font-extrabold leading-tight"
-          >
-            Discover the Road with{" "}
-            <span className="text-orange-500">Sri Karthikeya Travels</span>
-          </motion.h1>
+            <motion.h1
+              className="text-4xl lg:text-7xl font-bold text-indigo-950"
+              variants={itemVariants}
+            >
+              Save big with our car rentals
+            </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            viewport={{ amount: 0.6 }}
-            className="text-base sm:text-lg md:text-2xl max-w-2xl text-white/90"
-          >
-            Explore scenic routes, reliable rides, and unforgettable journeys —
-            your adventure begins here.
-          </motion.p>
+            <motion.p
+              className="mt-4 text-gray-600 text-base md:text-lg"
+              variants={itemVariants}
+            >
+              Explore top deals on rental cars across multiple destinations.
+              Fast booking. Easy cancellations. No hidden charges.
+            </motion.p>
 
-          <motion.a
-            href="#cars"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-            viewport={{ amount: 0.6 }}
-            whileHover={{ scale: 1.05 }}
-            className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-md text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out shadow-md"
+            <motion.div
+              className="mt-8 "
+              variants={itemVariants}
+            >
+              <Link
+                to="/form"
+                className="px-10 md:px-12 py-3 font-light rounded-full text-sm md:text-base text-white text-center transition duration-500 ease-in-out bg-indigo-950 border-1 border-indigo-950 hover:text-indigo-950 hover:bg-white"
+              >
+                Book Now
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Right Image */}
+          <motion.div
+            className="relative w-full hidden md:flex justify-center md:justify-end"
+            variants={imageVariants}
           >
-            Book a Ride
-          </motion.a>
-        </div>
+            <img
+              src={car}
+              alt="Hero Car"
+              className="relative z-10 w-full transition-all duration-500 ease-in-out"
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
