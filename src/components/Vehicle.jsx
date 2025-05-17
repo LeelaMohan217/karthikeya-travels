@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { itemVariants } from "../utils/motionVariants";
 import { cars } from "../constants/index";
-import { Link } from "react-router-dom";
-import Carcard from "./carcard";
+import Carcard from "./subcomponent/Carcard";
 
 const Vehicle = () => {
   return (
