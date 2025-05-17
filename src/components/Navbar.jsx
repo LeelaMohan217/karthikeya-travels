@@ -106,9 +106,9 @@ const Navbar = () => {
                 key={index}
                 className="py-2 text-sm md:text-lg text-indigo-950 hover:text-indigo-950 transition-colors duration-300"
               >
-                <a href={item.href} onClick={closeNavbar}>
+                <Link to={item.href} onClick={closeNavbar}>
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
