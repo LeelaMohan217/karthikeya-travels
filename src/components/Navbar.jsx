@@ -52,8 +52,8 @@ const Navbar = () => {
                   key={index}
                   className="relative group text-base text-indigo-950 transition-colors duration-300"
                 >
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     onClick={() => {
                       scrollToTop();
                       closeNavbar();
@@ -62,7 +62,7 @@ const Navbar = () => {
                   >
                     {item.label}
                     <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-950 transition-all duration-300 group-hover:w-full"></span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
