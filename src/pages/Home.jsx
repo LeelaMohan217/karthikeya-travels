@@ -1,16 +1,16 @@
 import React from "react";
 import Details from "../components/Details";
 import CarBookingSection from "../components/CarBookingSection";
-import Hero from "../components/Hero";
 import WhyRideWithUs from "../components/WhyRideWithUs";
 import Vehicle from "../components/Vehicle";
 import Aboutsection from "../components/Aboutsection";
 import FormFill from "../components/FormFill";
+import Hero1 from "../components/Hero1";
 
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Hero1 />
       <Aboutsection />
       <CarBookingSection />
       <WhyRideWithUs />
