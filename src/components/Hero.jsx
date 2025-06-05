@@ -8,10 +8,10 @@ const Hero = () => {
         <p className="text-orange-600 uppercase tracking-wide text-base md:text-lg font-semibold text-left md:text-center">
           Plan Your Destination
         </p>
-        <h2 className="text-6xl md:text-7xl font-bold mb-4 text-orange-700 text-left md:text-center">
+        <h2 className="text-6xl md:text-7xl font-bold mb-4 text-orange-700 text-left md:text-center leading-28 md:leading-20">
           Save big with Sri Karthikeya car rentals
         </h2>
-        <p className="text-sm md:text-lg text-orange-800 mb-6 text-left md:text-center">
+        <p className="text-base md:text-lg text-orange-800 mb-6 text-left md:text-center">
           Enjoy premium cars, 24/7 support, flexible plans, and seamless
           customer service. Our glass-clear pricing and luxury experience set us
           apart.
@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 text-center">
           <Link
             to="/about"
-            className="px-5 py-3 text-base border border-orange-600 text-orange-800 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
+            className="px-5 py-3 text-base border border-orange-600 text-orange-600 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
           >
             Learn More
           </Link>
