@@ -84,9 +84,9 @@ const Navbar = () => {
                 className="transition-all duration-300"
               >
                 {mobileDrawerOpen ? (
-                  <X className="text-gray-700 transition-all duration-300 w-12 h-12 "/>
+                  <X className="text-gray-700 transition-all duration-300 w-8 h-8 "/>
                 ) : (
-                  <Menu className="text-gray-700  transition-all duration-300 w-12 h-12" />
+                  <Menu className="text-gray-700  transition-all duration-300 w-8 h-8" />
                 )}
               </button>
             </div>
