@@ -18,7 +18,7 @@ const Hero = () => {
                   <MapPin className="w-4 h-4 text-orange-600" />
                 </div>
               </div>
-              <h2 className="text-5xl md:text-6xl font-bold  text-orange-600 leading-12 md:leading-16">
+              <h2 className="text-5xl md:text-6xl font-bold  text-orange-600 leading-14 md:leading-16">
                 Save big with <br />{" "}
                 <span className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-400 bg-clip-text text-transparent">
                   Sri Karthikeya
