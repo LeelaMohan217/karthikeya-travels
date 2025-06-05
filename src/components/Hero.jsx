@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden">
       <div className="max-w-5xl mx-auto z-10 px-6 py-12 text-gray-800 ">
-        <p className="text-orange-600 uppercase tracking-wide text-base md:text-lg font-semibold text-left md:text-center">
+        <p className="text-orange-600 uppercase tracking-wide text-base md:text-lg font-semibold text-left md:text-center mb-2">
           Plan Your Destination
         </p>
-        <h2 className="text-7xl font-bold mb-4 text-orange-700 text-left md:text-center leading-16 md:leading-20">
+        <h2 className="text-7xl font-bold mb-6 text-orange-700 text-left md:text-center leading-20">
           Save big with Sri Karthikeya car rentals
         </h2>
         <p className="text-base md:text-lg text-orange-800 mb-6 text-left md:text-center">
