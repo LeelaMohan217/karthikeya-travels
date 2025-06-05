@@ -6,7 +6,7 @@ import { MapPin } from "lucide-react";
 const Hero = () => {
   return (
     <section className="w-full min-h-screen bg-white flex items-center justify-center">
-      <div className="max-w-7xl mx-auto py-12">
+      <div className="max-w-7xl mx-auto py-12 px-6 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div className="flex flex-col item-start justify-center space-y-6">
             <div className="flex flex-col justify-center items-start space-y-6">
@@ -18,7 +18,7 @@ const Hero = () => {
                   <MapPin className="w-4 h-4 text-orange-600" />
                 </div>
               </div>
-              <h2 className="text-4xl md:text-6xl font-bold  text-orange-600 leading-10 md:leading-16">
+              <h2 className="text-5xl md:text-6xl font-bold  text-orange-600 leading-10 md:leading-16">
                 Save big with <br />{" "}
                 <span className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-400 bg-clip-text text-transparent">
                   Sri Karthikeya
