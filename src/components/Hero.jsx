@@ -8,7 +8,7 @@ const Hero = () => {
         <p className="text-orange-600 uppercase tracking-wide text-base md:text-lg font-semibold text-left md:text-center">
           Plan Your Destination
         </p>
-        <h2 className="text-6xl md:text-7xl font-bold mb-4 text-orange-700 text-left md:text-center leading-28 md:leading-20">
+        <h2 className="text-7xl font-bold mb-4 text-orange-700 text-left md:text-center leading-10 md:leading-20">
           Save big with Sri Karthikeya car rentals
         </h2>
         <p className="text-base md:text-lg text-orange-800 mb-6 text-left md:text-center">
