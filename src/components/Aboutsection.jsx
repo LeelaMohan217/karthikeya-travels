@@ -5,15 +5,19 @@ const Aboutsection = () => {
       <div className="max-w-7xl mx-auto py-16 px-6 xl:px-0">
         {/* Heading Section */}
         <div className="text-center mb-4 md:mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-900 mb-2">
-            About Sri Karthikeya Travels
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-2">
+            About {" "}
+            <span className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-400 bg-clip-text text-transparent">
+              Sri Karthikeya{" "}
+            </span>
+            Travels
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto font-bold tracking-wide font-shadow">
+          <p className="text-slate-800 text-lg max-w-2xl mx-auto font-bold tracking-wide font-shadow">
             Reliable. Comfortable. Affordable. Your trusted travel partner.
           </p>
         </div>
 
-        <div className="text-gray-700 text-sm md:text-base text-justify">
+        <div className="text-slate-800 text-base md:text-lg text-justify">
           {[
             `At Sri Karthikeya Travels, we take pride in delivering safe, timely, and convenient transportation services across multiple cities. With years of experience and a growing network of satisfied customers, we have built a name synonymous with reliability and comfort.`,
             `Whether it’s a spiritual trip, a weekend getaway, or corporate travel, we offer clean, air-conditioned vehicles and courteous drivers who prioritize your safety and satisfaction. We understand that travel is more than reaching a destination — it’s about the experience along the way.`,

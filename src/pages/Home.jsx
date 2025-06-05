@@ -12,8 +12,8 @@ const Home = () => {
     <>
       <Hero1 />
       <Aboutsection />
-      <CarBookingSection />
       <WhyRideWithUs />
+      <CarBookingSection />
       <Vehicle />
       <Details />
       <FormFill />
