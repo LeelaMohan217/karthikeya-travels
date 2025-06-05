@@ -7,7 +7,7 @@ const WhyRideWithUs = () => {
       <div className="max-w-7xl mx-auto px-6 py-20 xl:px-0 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-12">
           Why{" "}
-          <span className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
             ride with
           </span>{" "}
           us?
