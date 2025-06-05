@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 import WhyRideWithUs from "../components/WhyRideWithUs";
 import Vehicle from "../components/Vehicle";
 import Aboutsection from "../components/Aboutsection";
-import ViewAllCars from "../components/ViewAllCars";
+import FormFill from "../components/FormFill";
 
 const Home = () => {
   return (
@@ -15,8 +15,8 @@ const Home = () => {
       <CarBookingSection />
       <WhyRideWithUs />
       <Vehicle />
-      <ViewAllCars />
       <Details />
+      <FormFill />
     </>
   );
 };

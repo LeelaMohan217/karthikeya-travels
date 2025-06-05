@@ -1,74 +1,41 @@
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  containerVariants,
-  itemVariants,
-  imageVariants,
-} from "../utils/motionVariants";
-import car from "../assets/cars/svg/car.svg"; // adjust path as needed
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen flex items-center bg-gradient-to-t from-neutral-50 to-neutral-100">
-      <div className="max-w-7xl mx-auto py-4 lg:px-8 px-2 xl:px-0">
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {/* Left Content */}
-          <div className="text-left">
-            <motion.p
-              className="text-sm font-medium text-indigo-950 uppercase tracking-wider"
-              variants={itemVariants}
-            >
-              Plan Your Destination
-            </motion.p>
+    <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden">
+      <div className="max-w-5xl mx-auto z-10 px-6 py-12 text-gray-800 text-center">
+        <p className="text-orange-600 uppercase tracking-wide text-sm font-semibold">
+          Plan Your Destination
+        </p>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-orange-900">
+          Save big with Sri Karthikeya car rentals
+        </h2>
+        <p className="text-md md:text-lg text-orange-800 mb-6">
+          Enjoy premium cars, 24/7 support, flexible plans, and seamless
+          customer service. Our glass-clear pricing and luxury experience set us
+          apart.
+        </p>
 
-            <motion.h1
-              className="text-4xl lg:text-7xl font-bold text-indigo-950"
-              variants={itemVariants}
-            >
-              Save big with our car rentals
-            </motion.h1>
-
-            <motion.p
-              className="mt-4 text-gray-600 text-base md:text-lg"
-              variants={itemVariants}
-            >
-              Explore top deals on rental cars across multiple destinations.
-              Fast booking. Easy cancellations. No hidden charges.
-            </motion.p>
-
-            <motion.div
-              className="mt-8 "
-              variants={itemVariants}
-            >
-              <Link
-                to="/form"
-                className="px-10 md:px-12 py-3 font-light rounded-full text-sm md:text-base text-white text-center transition duration-500 ease-in-out bg-indigo-950 border-1 border-indigo-950 hover:text-indigo-950 hover:bg-white"
-              >
-                Book Now
-              </Link>
-            </motion.div>
-          </div>
-
-          {/* Right Image */}
-          <motion.div
-            className="relative w-full hidden md:flex justify-center md:justify-end"
-            variants={imageVariants}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+          <Link
+            to="/about"
+            className="px-5 py-3 border border-orange-600 text-gray-800 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
           >
-            <img
-              src={car}
-              alt="Hero Car"
-              className="relative z-10 w-full transition-all duration-500 ease-in-out"
-            />
-          </motion.div>
-        </motion.div>
+            Learn More
+          </Link>
+          <Link
+            to="/form"
+            className="px-5 py-3 rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium"
+          >
+            Book a ride
+          </Link>
+        </div>
       </div>
+
+      <div className="w-96 h-96 bg-orange-300 opacity-30 blur-3xl rounded-full absolute -top-20 -left-20"></div>
+      <div className="w-96 h-96 bg-orange-300 opacity-30 blur-3xl rounded-full absolute -bottom-20 -right-20"></div>
+      <div className="w-56 h-56 bg-orange-300 opacity-30 blur-3xl rounded-full absolute bottom-40 left-100"></div>
     </section>
   );
 };

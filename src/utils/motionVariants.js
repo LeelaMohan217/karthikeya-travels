@@ -28,8 +28,6 @@ export const imageVariants = {
   },
 };
 
-// Add these to your existing motionVariants.js
-
 export const leftContentVariants = {
   hidden: { opacity: 0, x: -30 },
   visible: {
@@ -54,5 +52,19 @@ export const fadeInUp = {
     opacity: 1,
     y: 0,
     transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
+
+const staggerContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
   },
 };

@@ -32,15 +32,15 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="relative max-w-7xl mx-auto py-4 lg:px-8 px-2 xl:px-0">
+        <div className="relative max-w-7xl mx-auto py-4 lg:px-8 px-6 xl:px-0">
           <div className="flex justify-between items-center transition-all duration-500">
             <div className="flex items-center">
               <a href="/" className="flex items-center flex-shrink-0">
-                <span className="text-xl md:text-2xl lg:text-3xl sm:block tracking-tight text-indigo-950 font-bold transition-colors duration-300">
+                <span className="text-xl md:text-2xl lg:text-3xl sm:block tracking-tight text-orange-600 font-bold transition-colors duration-300">
                   SK
                 </span>
               </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="relative group text-base text-indigo-950 transition-colors duration-300"
+                  className="relative group text-base text-gray-700 hover:text-orange-600 transition-colors duration-300"
                 >
                   <Link
                     to={item.href}
@@ -61,7 +61,7 @@ const Navbar = () => {
                     className="inline-block relative"
                   >
                     {item.label}
-                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-950 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
@@ -70,9 +70,11 @@ const Navbar = () => {
             <div>
               <Link
                 to="/form"
-                className="hidden lg:block px-10 md:px-12 py-3 font-light rounded-full text-sm md:text-base text-white text-center transition duration-500 ease-in-out bg-indigo-950 border-1 border-indigo-950 hover:text-indigo-950 hover:bg-white"
+                className="group hidden lg:block px-5 py-3 rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium "
               >
-                Get started
+                <div className="flex items-center gap-2 justify-center">
+                  Get started
+                </div>
               </Link>
             </div>
 
@@ -82,16 +84,15 @@ const Navbar = () => {
                 className="transition-all duration-300"
               >
                 {mobileDrawerOpen ? (
-                  <X className="text-indigo-950 transition-all duration-300" />
+                  <X className="text-gray-700 transition-all duration-300" />
                 ) : (
-                  <Menu className="text-indigo-950 transition-all duration-300" />
+                  <Menu className="text-gray-700  transition-all duration-300" />
                 )}
               </button>
             </div>
           </div>
         </div>
 
-        {/* Mobile Drawer */}
         <div
           className={`fixed top-0 left-0 z-40 h-screen p-6 bg-white w-[75%] lg:hidden border-r border-gray-300 backdrop-blur-lg transform transition-transform duration-500 ease-in-out ${
             mobileDrawerOpen ? "translate-x-0" : "-translate-x-full"
@@ -104,7 +105,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="py-2 text-sm md:text-lg text-indigo-950 hover:text-indigo-950 transition-colors duration-300"
+                className="py-2 text-sm md:text-lg text-gray-800 transition-colors duration-300"
               >
                 <Link to={item.href} onClick={closeNavbar}>
                   {item.label}

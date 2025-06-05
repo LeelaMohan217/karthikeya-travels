@@ -1,16 +1,30 @@
 import React from "react";
+import { useLocation, useParams } from "react-router-dom";
+import IndividualCarDetails from "../components/IndividualCarDetails";
+import { cars } from "../constants";
+import FormFill from "../components/FormFill";
+import Vehicle from "../components/Vehicle";
 
 const Cardetails = () => {
+  const { state } = useLocation();
+  const { id } = useParams();
+
+  const car = state?.car || cars.find((c) => String(c.id) === id);
+
   return (
     <>
       <section className="w-full bg-white">
-        <div className="max-w-7xl mx-auto py-8 md:py-14 px-2">
-          <div className="w-full bg-indigo-950 py-8 rounded-md">
-            <h1 className="text-white text-3xl md:text-4xl py-4 text-center font-semibold">
-              Cars
+        <div className="max-w-7xl mx-auto py-12 md:py-14 px-6">
+          <div className="mt-16 md:mt-20">
+            <h1 className="bg-orange-600 rounded-t-md text-white font-semibold px-4 py-2 text-xl">
+              {car.name}
+              {car.model}
             </h1>
           </div>
+          <IndividualCarDetails car={car} />
         </div>
+        <Vehicle />
+        <FormFill />
       </section>
     </>
   );

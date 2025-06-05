@@ -19,7 +19,7 @@ export const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Cars", href: "/carsPage" },
-  { label: "Form", href: "/form" },
+  { label: "Contact US", href: "/form" },
 ];
 
 export const platformLinks = [
@@ -32,7 +32,7 @@ export const communityLinks = [
   { href: "/home", text: "Home" },
   { href: "/about", text: "About" },
   { href: "/cars", text: "Cars" },
-  { href: "/form", text: "Form" },
+  { href: "/form", text: "Contact Us" },
 ];
 
 export const helpfulLinks = [
@@ -72,6 +72,12 @@ export const cars = [
     model: "i20 Sportz",
     image: sedan,
     category: "Hatchback",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
   {
     id: 2,
@@ -79,6 +85,12 @@ export const cars = [
     model: "Zeta 2024",
     image: sedan,
     category: "Sedan",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
   {
     id: 3,
@@ -86,6 +98,12 @@ export const cars = [
     model: "VDI Diesel",
     image: sedan,
     category: "Hatchback",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
   {
     id: 4,
@@ -93,6 +111,12 @@ export const cars = [
     model: "Sonet GT Line",
     image: sedan,
     category: "Mini SUV",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
   {
     id: 5,
@@ -100,6 +124,12 @@ export const cars = [
     model: "Crysta",
     image: sedan,
     category: "MUV",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
   {
     id: 6,
@@ -107,5 +137,11 @@ export const cars = [
     model: "Sonet GTX+",
     image: sedan,
     category: "Mini SUV",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+    fuelType: "petrol",
+    seatingCapacity: "5",
+    mileage: "10",
+    driveType: "driver/self",
   },
 ];

@@ -1,15 +1,15 @@
-import "./App.css";
 import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import CarsPage from "./pages/CarsPage";
 import About from "./pages/About";
 import Cardetails from "./pages/Cardetails";
 import Form from "./pages/Form";
 
-// ScrollToTop logic inside App
+import "./App.css";
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/carspage" element={<CarsPage />} />
-        <Route path="/cardetails" element={<Cardetails />} />
+        <Route path="/cardetails/:id" element={<Cardetails />} />
         <Route path="/form" element={<Form />} />
       </Routes>
       <Footer />

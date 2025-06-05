@@ -2,6 +2,7 @@ import React from "react";
 import { cars } from "../constants";
 import { motion } from "framer-motion";
 import Carcard from "../components/subcomponent/Carcard";
+import FormFill from "../components/FormFill";
 
 const groupedCars = {
   Hatchback: cars.filter((car) => car.category === "Hatchback"),
@@ -13,47 +14,75 @@ const groupedCars = {
 const CarsPage = () => {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto py-8 md:py-14 px-2">
-        <div className="w-full bg-indigo-950 py-8 rounded-md">
-          <h1 className="text-white text-3xl md:text-4xl py-4 text-center font-semibold">
-            Cars
-          </h1>
-        </div>
-
-        <div className="py-12">
-          <motion.h1
-            className="text-4xl font-bold text-indigo-900 mb-4"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+      <div className="max-w-7xl mx-auto py-8 px-4 md:px-6 lg:px-0">
+        <div className="flex flex-col space-y-4 md:space-y-8 mt-16 md:mt-20">
+          <h1 className="text-4xl font-bold text-orange-900">
             Explore Our Full Fleet of Cars
-          </motion.h1>
+          </h1>
 
-          <p className="text-gray-600 mb-6 text-lg">
-            We offer a wide variety of vehicles to suit your style, need, and
-            comfort. From compact hatchbacks to spacious MUVs — find the perfect
-            ride for any journey.
-          </p>
+          <div className="flex flex-col items-center text-justify md:text-start space-y-4">
+            <p className="text-gray-700 text-sm md:text-base">
+              We offer a wide selection of meticulously maintained vehicles
+              tailored to match your unique style, needs, and travel
+              preferences. Whether you’re looking for a compact hatchback for
+              city cruising, a rugged SUV for adventurous terrains, or a premium
+              MUV for family road trips — we have the perfect ride for every
+              journey. Choose from fuel-efficient models for everyday commutes,
+              spacious options for group travel, and stylish rides that make a
+              statement wherever you go. With top-tier comfort, safety, and
+              performance in every vehicle, your travel experience with us is
+              always smooth, reliable, and enjoyable.
+            </p>
 
-          <p className="text-gray-600 mb-6 text-lg">
-            Whether you're planning a short city ride, a weekend getaway, or a
-            family trip, our fleet is equipped to match every lifestyle. Our
-            vehicles are well-maintained, fuel-efficient, and available at
-            competitive prices.
-          </p>
+            <p className="text-gray-700 text-sm md:text-base ">
+              Whether you're heading out for a quick city ride, a spontaneous
+              weekend escape, or a long-awaited family vacation, our diverse
+              fleet is designed to fit every lifestyle and occasion. Each
+              vehicle is meticulously maintained to ensure peak performance and
+              cleanliness, offering fuel efficiency, comfort, and safety in
+              every mile. With flexible booking options and competitive pricing,
+              you get the convenience you need — without compromising on
+              quality. Let us take the stress out of travel so you can focus on
+              making memories, wherever the road leads.
+            </p>
 
-          <p className="text-gray-600 mb-12 text-lg">
-            Browse through our categorized collection below. Each vehicle comes
-            with detailed specifications and features to help you make an
-            informed choice. Let your next ride be smooth, stylish, and
-            stress-free.
-          </p>
+            <p className="text-gray-700 text-sm md:text-base ">
+              Browse through our well-organized collection below — from zippy
+              hatchbacks to luxurious SUVs, we've got something for every kind
+              of journey. Each vehicle listing includes comprehensive
+              specifications and key features to help you choose with
+              confidence. Find the perfect match for your travel needs and let
+              your next ride be smooth, stylish, and stress-free.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base ">
+              Sri Karthikeya Travels gives you the freedom to enjoy your journey
+              your way — with complete privacy and independence. Start savoring
+              the road trip from the moment you hit the road, not just when you
+              reach your destination. To make your experience even better, Sri
+              Karthikeya Travels in India offers unlimited kilometers on all
+              bookings — no usage caps, no hidden limits. We believe the best
+              things in life shouldn’t come with restrictions, and this is our
+              way of saying that choosing our cars is one of the best decisions
+              you'll make. Our goal is simple: help you focus on counting
+              memories, not kilometers — making every journey more joyful and
+              fulfilling.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base ">
+              Having your friends and family coming over for a long weekend?
+              Bored of driving your own vehicle and wanting to try your hands on
+              a different car? Used to owning your own car but somehow stranded
+              without one? Peak hour rush in all modes of public transport
+              horrifying you? Or just afraid of running the risk of being
+              fleeced by local autowallahs and taxiwallahs in a new town?
+              Whatever your reason may be, Sri Karthikeya travels is your
+              default choize to address all these reasons.
+            </p>
+          </div>
         </div>
 
         {Object.entries(groupedCars).map(([category, carList]) => (
-          <div key={category} className="mb-16 text-left">
-            <h2 className="text-2xl font-semibold text-indigo-800 mb-6">
+          <div key={category} className="my-12 text-left">
+            <h2 className="text-2xl font-semibold text-orange-900 mb-6">
               {category}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,6 +92,8 @@ const CarsPage = () => {
             </div>
           </div>
         ))}
+
+        <FormFill />
       </div>
     </section>
   );
