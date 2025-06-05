@@ -18,7 +18,7 @@ const Hero = () => {
                   <MapPin className="w-4 h-4 text-orange-600" />
                 </div>
               </div>
-              <h2 className="text-5xl md:text-6xl font-bold  text-orange-600 leading-10 md:leading-16">
+              <h2 className="text-5xl md:text-6xl font-bold  text-orange-600 leading-12 md:leading-16">
                 Save big with <br />{" "}
                 <span className="bg-gradient-to-r from-orange-500 via-red-600 to-yellow-400 bg-clip-text text-transparent">
                   Sri Karthikeya
@@ -35,13 +35,13 @@ const Hero = () => {
             <div className="flex sm:flex-row flex-col item-start gap-6">
               <Link
                 to="/about"
-                className="px-5 py-3 text-base border border-orange-600 text-orange-600 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
+                className="px-5 py-3 text-base border text-center border-orange-600 text-orange-600 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
               >
                 Learn More
               </Link>
               <Link
                 to="/form"
-                className="px-5 py-3 text-base rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium"
+                className="px-5 py-3 text-base text-center rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium"
               >
                 Book a ride
               </Link>
