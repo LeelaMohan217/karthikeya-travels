@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center transition-all duration-500">
             <div className="flex items-center">
               <a href="/" className="flex items-center flex-shrink-0">
-                <span className="text-xl md:text-2xl lg:text-3xl sm:block tracking-tight text-orange-600 font-bold transition-colors duration-300">
+                <span className="text-2xl md:text-3xl sm:block tracking-tight text-orange-600 font-bold transition-colors duration-300">
                   SK
                 </span>
               </a>
