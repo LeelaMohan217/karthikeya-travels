@@ -105,7 +105,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="py-2 text-sm md:text-lg text-gray-800 transition-colors duration-300"
+                className="py-2 text-base md:text-lg text-gray-800 transition-colors duration-300"
               >
                 <Link to={item.href} onClick={closeNavbar}>
                   {item.label}
