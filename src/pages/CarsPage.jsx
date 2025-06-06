@@ -1,8 +1,7 @@
 import React from "react";
 import { cars } from "../constants";
-import { motion } from "framer-motion";
-import Carcard from "../components/subcomponent/Carcard";
-import FormFill from "../components/FormFill";
+import Carcard from "../components/car/Carcard";
+import FormFill from "../components/form/FormFill";
 
 const groupedCars = {
   Hatchback: cars.filter((car) => car.category === "Hatchback"),

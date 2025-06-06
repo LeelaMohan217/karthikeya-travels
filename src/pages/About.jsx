@@ -1,6 +1,6 @@
 import React from "react";
 import car3 from "../assets/cars/svg/car3.svg";
-import Details from "../components/Details";
+import Details from "../components/home/Details";
 
 const About = () => {
   return (

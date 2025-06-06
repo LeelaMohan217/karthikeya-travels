@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+
+import "./App.css";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
 import CarsPage from "./pages/CarsPage";
 import About from "./pages/About";
 import Cardetails from "./pages/Cardetails";
 import Form from "./pages/Form";
-
-import "./App.css";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

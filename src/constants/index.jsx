@@ -145,3 +145,12 @@ export const cars = [
     driveType: "driver/self",
   },
 ];
+
+const testimonials = [
+  { name: "John Doe", comment: "Amazing service and great prices!", photo: "/p1.jpg" },
+  { name: "Jane Smith", comment: "The best car rental experience I've had.", photo: "/p2.jpg" },
+  { name: "Alice Johnson", comment: "Fast, easy, and affordable!", photo: "/p3.jpg" },
+  { name: "Mark Davis", comment: "Customer support was top-notch.", photo: "/p4.jpg" },
+  { name: "Sara Wilson", comment: "Loved the clean and well-maintained cars.", photo: "/p5.jpg" },
+  { name: "Tom Brown", comment: "Highly recommend for frequent travelers!", photo: "/p6.jpg" },
+];

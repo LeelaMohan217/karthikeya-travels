@@ -1,9 +1,8 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
-import IndividualCarDetails from "../components/IndividualCarDetails";
+import IndividualCarDetails from "../components/car/IndividualCarDetails";
 import { cars } from "../constants";
-import FormFill from "../components/FormFill";
-import Vehicle from "../components/Vehicle";
+import Vehicle from "../components/car/Vehicle";
 
 const Cardetails = () => {
   const { state } = useLocation();
@@ -24,7 +23,6 @@ const Cardetails = () => {
           <IndividualCarDetails car={car} />
         </div>
         <Vehicle />
-        <FormFill />
       </section>
     </>
   );
