@@ -5,7 +5,6 @@ const WhyRideWithUs = () => {
   return (
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20 xl:px-0 text-center">
-        {/* Section header */}
         <div className="flex flex-col items-center gap-6 mb-16">
           <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
             <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-pulse" />
@@ -13,16 +12,15 @@ const WhyRideWithUs = () => {
               Benefits
             </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
             Why ride with us?
           </h2>
-          <p className="text-base text-gray-500 max-w-xl mt-2">
-            Enjoy a smarter, safer, and smoother travel experience — crafted to
+          <p className="text-base md:text-lg text-gray-500 max-w-xl mt-2">
+            Enjoy a smarter, safer, and smoother travel experience crafted to
             put your comfort first.
           </p>
         </div>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
           {rideFeatures.map((feature, index) => {
             const Icon = feature.icon;
@@ -31,16 +29,14 @@ const WhyRideWithUs = () => {
                 key={index}
                 className="group bg-white p-8 rounded-3xl border border-gray-200 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
               >
-                {/* Icon */}
-                <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-orange-100 text-orange-600 mb-6 shadow-inner group-hover:shadow-orange-300 transition-shadow duration-300">
+                <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-orange-100 text-orange-600 mb-6 md:mb-12 shadow-inner group-hover:shadow-orange-300 transition-shadow duration-300">
                   <Icon className="w-8 h-8" />
                 </div>
 
-                {/* Title & Description */}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-slate-500 leading-relaxed">
+                <p className="text-base md:text-lg text-slate-500 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

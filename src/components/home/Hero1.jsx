@@ -10,7 +10,7 @@ import profile3 from "../../assets/profile/profile3.avif";
 const Hero1 = () => {
   return (
     <section className="w-full bg-white flex items-center justify-center">
-      <div className="max-w-6xl mx-auto py-8 md:py-12 px-6 md:px-0 ">
+      <div className="max-w-7xl mx-auto py-8 md:py-12 px-6 md:px-0 ">
         <div className="flex flex-col justify-center items-center md:mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 items-center py-10">
             <div className="flex flex-col item-start justify-center space-y-6">
@@ -30,7 +30,7 @@ const Hero1 = () => {
                   </span>{" "}
                   car rentals
                 </h2>
-                <p className="hidden md:block text-base md:text-lg text-slate-800 text-center md:text-left">
+                <p className="hidden md:block text-base md:text-lg text-gray-500 text-center md:text-left">
                   Enjoy premium cars, 24/7 support, flexible plans, and seamless
                   customer service. Our glass-clear pricing and luxury
                   experience set us apart.
@@ -64,7 +64,13 @@ const Hero1 = () => {
             </div>
           </div>
 
-          <div className="md:hidden block mt-4">
+          <p className="md:hidden text-base md:text-lg text-gray-500 text-center md:text-left">
+            Enjoy premium cars, 24/7 support, flexible plans, and seamless
+            customer service. Our glass-clear pricing and luxury experience set
+            us apart.
+          </p>
+
+          <div className="w-full md:hidden block mt-4">
             <div className="flex sm:flex-row flex-col item-start gap-6">
               <Link
                 to="/about"

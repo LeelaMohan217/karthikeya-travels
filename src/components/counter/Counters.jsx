@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 const Counters = () => {
   return (
     <section className="w-full bg-neutral-100">
-      <div className="max-w-6xl mx-auto py-12 px-6">
+      <div className="max-w-7xl mx-auto py-12 px-6">
         <div className="flex flex-col md:flex-row justify-evenly text-center py-10 md:py-20">
           {[
             { label: "Happy Customers", end: 500, duration: 2.5 },

@@ -1,19 +1,44 @@
 import React from "react";
 import { cars } from "../../constants/index";
 import Carcard from "./Carcard";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const Vehicle = () => {
   return (
-    <section className="w-full bg-neutral-100">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto px-6 py-12 xl:px-0 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-orange-900 mb-12">
-          Take a look at our premium fleet
-        </h2>
+        <div className="flex flex-col items-center gap-6 mb-16">
+          <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
+            <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-pulse" />
+            <p className="uppercase font-medium tracking-wide text-orange-600 text-sm">
+              fleet
+            </p>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+            Take a look at our premium fleet
+          </h2>
+          <p className="text-base md:text-lg text-slate-500 max-w-xl mt-4">
+            Experience unmatched quality, style, and performance with our
+            top-tier selection of vehicles.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cars.slice(0, 3).map((car) => (
             <Carcard key={car.id} car={car} />
           ))}
+        </div>
+        <div className="flex justify-center gap-4 text-base md:text-lg text-gray-500">
+          <p>Check our all cars collection by clicking here.</p>
+          <div className="flex justify-end">
+            <Link
+              to="/cars"
+              className="flex items-center  font-medium text-orange-600  transition"
+            >
+              View All Cars
+            </Link>
+          </div>
         </div>
       </div>
     </section>
