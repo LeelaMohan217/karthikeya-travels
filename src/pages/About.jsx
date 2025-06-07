@@ -94,7 +94,7 @@ const About = () => {
             </div>
 
             <div className="flex flex-col space-y-6">
-              <div className="bg-gray-50 p-4 md:p-8">
+              <div className="p-4 md:p-8">
                 <CarFront className="text-orange-500 bg-orange-100 px-4 py-2 w-16 h-16 rounded-xl mb-2" />
 
                 <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">
@@ -105,7 +105,7 @@ const About = () => {
                   weekend getaways, and long journeys.
                 </p>
               </div>
-              <div className="bg-gray-50 p-4 md:p-8 border-t border-b border-slate-300">
+              <div className="p-4 md:p-8 border-t border-b border-slate-300">
                 <Map className="text-orange-500 bg-orange-100 px-4 py-2 w-16 h-16 rounded-xl mb-2" />
 
                 <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">
@@ -116,7 +116,7 @@ const About = () => {
                   we’ve got packages designed just for you.
                 </p>
               </div>
-              <div className="bg-gray-50 p-4 md:p-8">
+              <div className="p-4 md:p-8">
                 <HeartHandshake className="text-orange-500 bg-orange-100 px-4 py-2 w-16 h-16 rounded-xl mb-2" />
 
                 <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">

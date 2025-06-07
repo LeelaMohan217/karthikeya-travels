@@ -30,7 +30,7 @@ export const platformLinks = [
 export const communityLinks = [
   { href: "/home", text: "Home" },
   { href: "/about", text: "About" },
-  { href: "/cars", text: "Cars" },
+  { href: "/carspage", text: "Cars" },
   { href: "/form", text: "Contact Us" },
 ];
 
