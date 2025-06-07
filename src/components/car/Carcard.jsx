@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Car, ArrowRight, CarFront } from "lucide-react";
 
 const Carcard = ({ car }) => {
-  const [hovered, setHovered] = useState(false);
   return (
     <div className="bg-white rounded-2xl shadow-md inset-ring-1 inset-ring-orange-900/50 border border-gray-200 w-full max-w-sm mx-auto mb-8 hover:shadow-xl transition duration-300 ease-in-out">
       <img
@@ -26,8 +25,6 @@ const Carcard = ({ car }) => {
           <Link
             to={`/cardetails/${car.id}`}
             className="flex items-center text-sm font-medium text-orange-600  transition"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
           >
             View Details
             <span className="ml-1">

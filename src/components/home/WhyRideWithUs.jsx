@@ -12,7 +12,7 @@ const WhyRideWithUs = () => {
               Benefits
             </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+          <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
             Why ride with us?
           </h2>
           <p className="text-base md:text-lg text-gray-500 max-w-xl mt-2">

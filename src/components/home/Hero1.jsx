@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import hero2 from "../../assets/cars/hero2.jpg";
 import { MapPin, Star, StarIcon } from "lucide-react";
-import { cars } from "../../constants/index.jsx";
 import profile1 from "../../assets/profile/profile1.avif";
 import profile2 from "../../assets/profile/profile2.avif";
 import profile3 from "../../assets/profile/profile3.avif";

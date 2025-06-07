@@ -165,35 +165,30 @@ export const cars = [
   },
 ];
 
-const testimonials = [
+import profile7 from "../assets/profile/profile7.avif";
+import profile5 from "../assets/profile/profile5.avif";
+import profile8 from "../assets/profile/profile8.avif";
+
+export const testimonials = [
   {
-    name: "John Doe",
-    comment: "Amazing service and great prices!",
-    photo: "/p1.jpg",
+    name: "Mark Davis",
+    date: "March 5, 2024",
+    comment:
+      "Amazing service and great prices! The booking process was seamless, and the car was in perfect condition.",
+    photo: profile5,
   },
   {
     name: "Jane Smith",
-    comment: "The best car rental experience I've had.",
-    photo: "/p2.jpg",
+    date: "March 5, 2024",
+    comment:
+      "The best car rental experience I've had. The staff was friendly, and the car was clean and well-maintained.",
+    photo: profile7,
   },
   {
     name: "Alice Johnson",
-    comment: "Fast, easy, and affordable!",
-    photo: "/p3.jpg",
-  },
-  {
-    name: "Mark Davis",
-    comment: "Customer support was top-notch.",
-    photo: "/p4.jpg",
-  },
-  {
-    name: "Sara Wilson",
-    comment: "Loved the clean and well-maintained cars.",
-    photo: "/p5.jpg",
-  },
-  {
-    name: "Tom Brown",
-    comment: "Highly recommend for frequent travelers!",
-    photo: "/p6.jpg",
+    date: "March 5, 2024",
+    comment:
+      "Fast, easy, and affordable! I loved the convenience and the responsive customer support.",
+    photo: profile8,
   },
 ];

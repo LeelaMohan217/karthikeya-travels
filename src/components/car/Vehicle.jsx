@@ -2,7 +2,6 @@ import React from "react";
 import { cars } from "../../constants/index";
 import Carcard from "./Carcard";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 
 const Vehicle = () => {
   return (
@@ -15,7 +14,7 @@ const Vehicle = () => {
               fleet
             </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+          <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
             Take a look at our premium fleet
           </h2>
           <p className="text-base md:text-lg text-slate-500 max-w-xl mt-4">
@@ -28,17 +27,6 @@ const Vehicle = () => {
           {cars.slice(0, 3).map((car) => (
             <Carcard key={car.id} car={car} />
           ))}
-        </div>
-        <div className="flex justify-center gap-4 text-base md:text-lg text-gray-500">
-          <p>Check our all cars collection by clicking here.</p>
-          <div className="flex justify-end">
-            <Link
-              to="/cars"
-              className="flex items-center  font-medium text-orange-600  transition"
-            >
-              View All Cars
-            </Link>
-          </div>
         </div>
       </div>
     </section>
