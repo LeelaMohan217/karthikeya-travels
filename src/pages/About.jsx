@@ -1,6 +1,6 @@
 import React from "react";
 import car3 from "../assets/cars/svg/car3.svg";
-import Details from "../components/home/Details";
+import { CarFront, Flame } from "lucide-react";
 
 const About = () => {
   return (
@@ -33,10 +33,16 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12">
-          <div className="space-y-6 flex flex-col justify-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-orange-900 mb-4 tracking-tight">
-              What We Offer
-            </h2>
+          <div className="flex flex-col">
+            <div className="flex flex-col">
+              <div className="flex items-center text-slate-800 space-x-1">
+                <Flame className="text-slate- w-5 h-5" />
+                <p className="text-base md:text-lg">We Offer</p>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4 tracking-tight">
+                What We Offer
+              </h2>
+            </div>
             <p className="text-gray-600 text-sm md:text-base tracking-wide leading-relaxed">
               Discover a curated collection of travel experiences with our
               modern fleet and personalized service.
@@ -44,31 +50,33 @@ const About = () => {
           </div>
 
           <div className="flex flex-col space-y-6">
-            <div className="bg-gray-50 p-5 shadow-md  border-l-4 border-orange-500 rounded-md">
-              <h3 className="text-orange-900 font-semibold text-base md:text-lg tracking-tight mb-2">
-                🚗 Wide Fleet Selection
+            <div className="bg-gray-50 p-5 shadow-lg  border-l-4 border border-slate-300 rounded-lg">
+              <CarFront className="text-orange-500 bg-orange-100 px-4 py-2 w-16 h-16 rounded-xl mb-2" />
+
+              <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">
+                Wide Fleet Selection
               </h3>
-              <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+              <p className="text-slate-700 text-sm md:text-base tracking-wide leading-relaxed">
                 Hatchbacks, sedans, SUVs, and MUVs – tailored for city drives,
                 weekend getaways, and long journeys.
               </p>
             </div>
 
-            <div className="bg-gray-50 shadow-md  p-5 border-l-4 border-orange-500 rounded-md">
-              <h3 className="text-orange-900 font-semibold text-base md:text-lg tracking-tight mb-2">
+            <div className="bg-gray-50 p-5 shadow-lg  border-l-4 border border-slate-300 rounded-lg">
+              <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">
                 🌍 Personalized Travel Solutions
               </h3>
-              <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+              <p className="text-slate-700 text-sm md:text-base tracking-wide leading-relaxed">
                 Whether it's a spontaneous road trip or a pre-planned tour,
                 we’ve got packages designed just for you.
               </p>
             </div>
 
-            <div className="bg-gray-50 shadow-md p-5 border-l-4 border-orange-500 rounded-md">
-              <h3 className="text-orange-900 font-semibold text-base md:text-lg tracking-tight mb-2">
+            <div className="bg-gray-50 p-5 shadow-lg  border-l-4 border border-slate-300 rounded-lg">
+              <h3 className="text-slate-800 font-semibold text-base md:text-lg tracking-tight mb-2">
                 🧳 Comfort & Safety First
               </h3>
-              <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+              <p className="text-slate-700 text-sm md:text-base tracking-wide leading-relaxed">
                 Every vehicle is cleaned, serviced, and ready. Your peace of
                 mind is our top priority.
               </p>
@@ -76,7 +84,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Details />
     </section>
   );
 };

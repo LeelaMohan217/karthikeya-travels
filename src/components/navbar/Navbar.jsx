@@ -70,7 +70,7 @@ const Navbar = () => {
             <div>
               <Link
                 to="/form"
-                className="group hidden lg:block px-8 py-3 rounded-full border border-orange-600 text-slate-800  transition-all duration-300 font-medium "
+                className="group hidden lg:block px-5 py-3 rounded-full bg-orange-600 hover:bg-orange-600/80 text-white shadow-md  transition-all duration-300 font-medium "
               >
                 Contact Us
               </Link>

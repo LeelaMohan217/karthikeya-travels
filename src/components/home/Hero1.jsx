@@ -11,7 +11,7 @@ const Hero1 = () => {
   return (
     <section className="w-full bg-white flex items-center justify-center">
       <div className="max-w-7xl mx-auto py-8 md:py-12 px-6 md:px-0 ">
-        <div className="flex flex-col md:mt-10">
+        <div className="flex flex-col justify-center items-center md:mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 items-center py-10">
             <div className="flex flex-col item-start justify-center space-y-6">
               <div className="flex flex-col justify-center items-center md:items-start md:space-y-6">
@@ -41,13 +41,13 @@ const Hero1 = () => {
                 <div className="flex sm:flex-row flex-col item-start gap-6">
                   <Link
                     to="/about"
-                    className="px-5 py-3 text-base border text-center border-orange-600 text-orange-600 rounded-md hover:bg-orange-200 transition-all duration-300 font-medium"
+                    className="px-5 py-3 text-base border text-center border-orange-600 text-orange-600 rounded-full hover:bg-orange-200 transition-all duration-300 font-medium"
                   >
                     Learn More
                   </Link>
                   <Link
                     to="/form"
-                    className="px-5 py-3 text-base text-center rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium"
+                    className="px-5 py-3 text-base text-center rounded-full bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium"
                   >
                     Book a ride
                   </Link>
@@ -86,7 +86,7 @@ const Hero1 = () => {
               <div className="flex items-center space-x-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-5 h-5 text-slate-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -94,7 +94,7 @@ const Hero1 = () => {
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-5 h-5 text-slate-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -102,7 +102,7 @@ const Hero1 = () => {
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-5 h-5 text-slate-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -110,7 +110,7 @@ const Hero1 = () => {
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-5 h-5 text-slate-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -118,7 +118,7 @@ const Hero1 = () => {
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-5 h-5 text-slate-800"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -135,9 +135,9 @@ const Hero1 = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-36 py-6 md:px-20">
+          <div className="max-w-3xl py-6 md:px-20">
             <div className="bg-black/90 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col px-8 py-6 shadow-lg">
-              <div className="flex -space-x-2 py-2">
+              <div className="flex -space-x-2 py-2 items-center justify-center">
                 <img
                   src={profile1}
                   alt="Albert"
@@ -154,29 +154,13 @@ const Hero1 = () => {
                   className="w-10 h-10 rounded-full border-2 border-white/20"
                 />
               </div>
-              <h1 className="text-2xl font-playfair font-semibold text-white">
+              <h1 className="text-2xl font-playfair font-semibold text-white text-center">
                 12.5K+ People
               </h1>
-              <p className="text-base md:text-lg text-white/80">
+              <p className="text-base md:text-lg text-white/80 text-center">
                 have used our services such as renting, buying, or even selling
                 their car.
               </p>
-            </div>
-
-            <div className="hidden bg-black/90 backdrop-blur-md border border-white/10 rounded-2xl md:flex flex-col px-8 py-6 shadow-lg items-center space-y-4">
-              <h1 className="text-white font-playfair text-2xl font-semibold tracking-wider">
-                Our Vehicle Fleet
-              </h1>
-              <div className="flex flex-wrap gap-4 justify-center items-center">
-                {cars.map((car) => (
-                  <p
-                    key={car.id}
-                    className="border border-white/80 text-white/80 px-5 py-2 rounded-full"
-                  >
-                    {car.name}
-                  </p>
-                ))}
-              </div>
             </div>
           </div>
         </div>

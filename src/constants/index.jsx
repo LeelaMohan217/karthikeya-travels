@@ -1,5 +1,4 @@
 import React from "react";
-import { ShieldCheck, Clock, Car } from "lucide-react";
 import {
   Facebook,
   Instagram,
@@ -43,24 +42,44 @@ export const helpfulLinks = [
   { href: "/", text: "Terms and Conditions" },
 ];
 
+import { ShieldCheck, Clock, Car, Wifi, MapPin, Smile } from "lucide-react";
+
 export const rideFeatures = [
   {
     title: "Safe & Secure",
     description:
-      "Travel with confidence thanks to top safety protocols, driver background checks, and real-time tracking.",
+      "Travel with confidence thanks to safety protocols, background checks, and real-time trip monitoring.",
     icon: ShieldCheck,
   },
   {
     title: "On Time Always",
     description:
-      "We prioritize punctuality with live traffic updates and optimized routes to ensure timely arrivals.",
+      "Live traffic updates and smart routing help ensure your ride arrives right when you need it.",
     icon: Clock,
   },
   {
     title: "Comfort Guaranteed",
     description:
-      "Enjoy a smooth ride with clean, modern vehicles, comfortable seats, and climate control for a relaxing journey.",
+      "Relax in clean, modern vehicles with spacious seating, climate control, and a smooth ride.",
     icon: Car,
+  },
+  {
+    title: "Free In-Ride Wi-Fi",
+    description:
+      "Stay connected on the go with complimentary high-speed Wi-Fi in every vehicle.",
+    icon: Wifi,
+  },
+  {
+    title: "Easy Pickup & Drop",
+    description:
+      "Get picked up and dropped off at your preferred location with GPS-accurate tracking.",
+    icon: MapPin,
+  },
+  {
+    title: "Friendly Drivers",
+    description:
+      "Enjoy your trip with polite, helpful, and professionally trained drivers who put your comfort first.",
+    icon: Smile,
   },
 ];
 
@@ -147,10 +166,34 @@ export const cars = [
 ];
 
 const testimonials = [
-  { name: "John Doe", comment: "Amazing service and great prices!", photo: "/p1.jpg" },
-  { name: "Jane Smith", comment: "The best car rental experience I've had.", photo: "/p2.jpg" },
-  { name: "Alice Johnson", comment: "Fast, easy, and affordable!", photo: "/p3.jpg" },
-  { name: "Mark Davis", comment: "Customer support was top-notch.", photo: "/p4.jpg" },
-  { name: "Sara Wilson", comment: "Loved the clean and well-maintained cars.", photo: "/p5.jpg" },
-  { name: "Tom Brown", comment: "Highly recommend for frequent travelers!", photo: "/p6.jpg" },
+  {
+    name: "John Doe",
+    comment: "Amazing service and great prices!",
+    photo: "/p1.jpg",
+  },
+  {
+    name: "Jane Smith",
+    comment: "The best car rental experience I've had.",
+    photo: "/p2.jpg",
+  },
+  {
+    name: "Alice Johnson",
+    comment: "Fast, easy, and affordable!",
+    photo: "/p3.jpg",
+  },
+  {
+    name: "Mark Davis",
+    comment: "Customer support was top-notch.",
+    photo: "/p4.jpg",
+  },
+  {
+    name: "Sara Wilson",
+    comment: "Loved the clean and well-maintained cars.",
+    photo: "/p5.jpg",
+  },
+  {
+    name: "Tom Brown",
+    comment: "Highly recommend for frequent travelers!",
+    photo: "/p6.jpg",
+  },
 ];
