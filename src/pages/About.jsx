@@ -5,7 +5,7 @@ import { CarFront, Flame } from "lucide-react";
 const About = () => {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-6">
+      <div className="max-w-6xl mx-auto py-12 px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-12 items-center">
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold text-orange-900 tracking-tight">

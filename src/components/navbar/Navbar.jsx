@@ -36,7 +36,7 @@ const Navbar = () => {
           scrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="relative max-w-7xl mx-auto py-4 lg:px-8 px-6 xl:px-0">
+        <div className="relative max-w-6xl mx-auto py-4 lg:px-8 px-6 xl:px-0">
           <div className="flex justify-between items-center transition-all duration-500">
             <div className="flex items-center">
               <a href="/" className="flex items-center flex-shrink-0">
