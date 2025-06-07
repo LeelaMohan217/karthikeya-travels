@@ -77,7 +77,7 @@ const FormPage = () => {
 
   return (
     <section className="w-full py-16 px-6 lg:px-12">
-      <div className="relative max-w-4xl mt-2 md:mt-20 mx-auto bg-white border border-orange-100 rounded-xl shadow-xl/30 p-4 md:p-8 space-y-8">
+      <div className="relative max-w-4xl mt-2 md:mt-20 mx-auto bg-white border border-slate-300 rounded-xl shadow-xl p-4 md:p-8 space-y-8">
         <div className="text-center">
           <h2 className="text-3xl font-semibold mb-2 text-gray-800">Let's Connect</h2>
           <p className="text-gray-600">
@@ -110,7 +110,7 @@ const FormPage = () => {
           <div className="md:col-span-2 text-center">
             <button
               type="submit"
-              className="mt-4 px-5 py-3 rounded-md bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium cursor-pointer"
+              className="mt-4 px-5 py-3 rounded-full bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium cursor-pointer"
             >
               Submit
             </button>

@@ -8,16 +8,16 @@ const ViewAllCars = () => {
   return (
     <section className="w-full bg-neutral-100">
       <div className="max-w-7xl mx-auto px-6 py-20 xl:px-0">
-        {/* Section Header */}
+        
         <div className="flex flex-col items-start gap-4 mb-16">
           <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
             <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-ping" />
             <p className="uppercase font-semibold tracking-wide text-orange-600 text-sm">
-              Fleet
+              explore
             </p>
           </div>
-          <h2 className="max-w-3xl text-4xl md:text-5xl font-bold text-slate-800 leading-tight">
-            Take a look at our wide range of cars.
+          <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+            Explore our wide range of cars.
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl">
             Experience seamless travel with our modern, fully-inspected, and
@@ -38,7 +38,7 @@ const ViewAllCars = () => {
           <div className="flex flex-col justify-center space-y-10">
             <div className="flex flex-col justify-center items-start space-y-6">
               <div>
-                <CarFront className="w-16 h-16 p-4 bg-orange-200 text-orange-600 rounded-2xl" />
+                <CarFront className="w-16 h-16 p-4 bg-orange-100 text-orange-600 rounded-2xl" />
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-2xl md:text-3xl font-semibold text-slate-800">
@@ -62,10 +62,10 @@ const ViewAllCars = () => {
             </div>
             <div className="w-full">
               <Link
-                to="/form"
+                to="/cars"
                 className="w-full block text-center px-5 py-3 text-base rounded-full bg-black opacity-90 hover:opacity-100 text-white transition-all duration-300 font-medium"
               >
-                Book a Ride
+                Check Out All Cars
               </Link>
             </div>
           </div>

@@ -14,13 +14,20 @@ const CarsPage = () => {
   return (
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto py-8 px-4 md:px-6 lg:px-0">
-        <div className="flex flex-col space-y-4 md:space-y-8 mt-16 md:mt-20">
-          <h1 className="text-4xl font-bold text-orange-900">
-            Explore Our Full Fleet of Cars
+        <div className="flex flex-col gap-2 justify-center items-center">
+          <div className="bg-orange-100 rounded-full text-center mt-20">
+            <p className=" text-orange-600 px-4 py-2 font-medium">Cars</p>
+          </div>
+          <h1 className="text-4xl md:text-5xl text-slate-800 font-semibold text-center md:leading-16 mt-4">
+            Explore the Full Range of{" "}
+            <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
+              premium
+            </span>{" "}
+            Vehicles Ready for Your Next Journey
           </h1>
 
           <div className="flex flex-col items-center text-justify md:text-start space-y-4">
-            <p className="text-gray-700 text-sm md:text-base">
+            <p className="text-gray-700 text-base md:text-lg">
               We offer a wide selection of meticulously maintained vehicles
               tailored to match your unique style, needs, and travel
               preferences. Whether you’re looking for a compact hatchback for
@@ -33,7 +40,7 @@ const CarsPage = () => {
               always smooth, reliable, and enjoyable.
             </p>
 
-            <p className="text-gray-700 text-sm md:text-base ">
+            <p className="text-gray-700 text-base md:text-lg">
               Whether you're heading out for a quick city ride, a spontaneous
               weekend escape, or a long-awaited family vacation, our diverse
               fleet is designed to fit every lifestyle and occasion. Each
@@ -45,7 +52,7 @@ const CarsPage = () => {
               making memories, wherever the road leads.
             </p>
 
-            <p className="text-gray-700 text-sm md:text-base ">
+            <p className="text-gray-700 text-base md:text-lg">
               Browse through our well-organized collection below — from zippy
               hatchbacks to luxurious SUVs, we've got something for every kind
               of journey. Each vehicle listing includes comprehensive
@@ -53,7 +60,7 @@ const CarsPage = () => {
               confidence. Find the perfect match for your travel needs and let
               your next ride be smooth, stylish, and stress-free.
             </p>
-            <p className="text-gray-700 text-sm md:text-base ">
+            <p className="text-gray-700 text-base md:text-lg">
               Sri Karthikeya Travels gives you the freedom to enjoy your journey
               your way — with complete privacy and independence. Start savoring
               the road trip from the moment you hit the road, not just when you
@@ -66,7 +73,7 @@ const CarsPage = () => {
               memories, not kilometers — making every journey more joyful and
               fulfilling.
             </p>
-            <p className="text-gray-700 text-sm md:text-base ">
+            <p className="text-gray-700 text-base md:text-lg">
               Having your friends and family coming over for a long weekend?
               Bored of driving your own vehicle and wanting to try your hands on
               a different car? Used to owning your own car but somehow stranded
@@ -81,7 +88,7 @@ const CarsPage = () => {
 
         {Object.entries(groupedCars).map(([category, carList]) => (
           <div key={category} className="my-12 text-left">
-            <h2 className="text-2xl font-semibold text-orange-900 mb-6">
+            <h2 className="text-2xl font-semibold text-slate-800 mb-6">
               {category}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -21,7 +21,9 @@ const Counters = () => {
               <h2 className="text-5xl font-semibold text-orange-600">
                 <CountUp end={item.end} duration={item.duration} />+
               </h2>
-              <p className="text-gray-600 mt-2">{item.label}</p>
+              <p className="text-gray-600 mt-2 text-base md:text-lg">
+                {item.label}
+              </p>
             </div>
           ))}
         </div>
