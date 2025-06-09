@@ -21,7 +21,7 @@ const ViewAllCars = () => {
               Cars
             </span>
           </h2>
-          <p className="text-base md:text-lg text-gray-600">
+          <p className="max-w-4xl text-base md:text-lg text-gray-600 text-center">
             Experience seamless travel with our modern, fully-inspected, and
             comfort-focused fleet—designed for smooth rides and unforgettable
             journeys.
