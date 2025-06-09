@@ -14,7 +14,10 @@ const Testimonial = () => {
               </p>
             </div>
             <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
-              What They Say About Our Service
+              What They Say About Our{" "}
+              <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
+                Service
+              </span>
             </h2>
             <p className="text-base md:text-lg text-gray-500 max-w-xl mt-2">
               Hear from our satisfied customers who trust us for reliable,

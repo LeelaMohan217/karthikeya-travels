@@ -15,7 +15,11 @@ const Vehicle = () => {
             </p>
           </div>
           <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
-            Take a look at our premium fleet
+            Take a Look At Our{" "}
+            <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
+              Premium
+            </span>{" "}
+            Fleet
           </h2>
           <p className="text-base md:text-lg text-slate-500 max-w-xl mt-4">
             Experience unmatched quality, style, and performance with our

@@ -1,8 +1,8 @@
 import React from "react";
-import car1 from "../assets/cars/car1.jpg";
-import car2 from "../assets/cars/car2.jpg";
+import car5 from "../assets/cars/car5.jpg";
 import { CarFront, HeartHandshake, Map } from "lucide-react";
 import Satisfaction from "../components/about/Satisfaction";
+import SelfDrive from "../components/selfdrive/SelfDrive";
 
 const About = () => {
   return (
@@ -21,58 +21,43 @@ const About = () => {
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+            <div className="flex flex-col space-y-4">
+              <div className="flex flex-col items-start gap-2">
+                <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
+                  <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-pulse" />
+                  <p className="uppercase font-medium tracking-wide text-orange-600 text-sm">
+                    Our story
+                  </p>
+                </div>
+                <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+                  Who we are
+                </h2>
+              </div>
+              <div className="flex flex-col justify-between space-y-4">
+                <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+                  We are passionate about helping people explore the world on
+                  wheels. Our mission is to provide reliable, affordable, and
+                  stylish vehicles for every kind of traveler.
+                </p>
+                <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+                  Whether you're taking a short trip across the city or
+                  embarking on a long journey with your loved ones, we’ve got
+                  the perfect vehicle to make your travel smooth and enjoyable.
+                </p>
+                <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
+                  With a commitment to quality and customer satisfaction, our
+                  fleet is regularly maintained and fully equipped to meet your
+                  needs. From compact cars to spacious SUVs, we ensure you find
+                  the right ride for any occasion.
+                </p>
+              </div>
+            </div>
             <div>
               <img
-                src={car1}
+                src={car5}
                 alt="Car"
                 className="w-full h-auto object-contain rounded-xl"
               />
-            </div>
-            <div className="flex flex-col justify-between gap-4">
-              <div className="flex flex-col space-y-4">
-                <div className="flex flex-col items-start gap-2">
-                  <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
-                    <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-pulse" />
-                    <p className="uppercase font-medium tracking-wide text-orange-600 text-sm">
-                      Our story
-                    </p>
-                  </div>
-                  <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
-                    Who we are
-                  </h2>
-                </div>
-                <div className="flex flex-col justify-between space-y-4">
-                  <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
-                    We are passionate about helping people explore the world on
-                    wheels. Our mission is to provide reliable, affordable, and
-                    stylish vehicles for every kind of traveler.
-                  </p>
-                  <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
-                    Whether you're taking a short trip across the city or
-                    embarking on a long journey with your loved ones, we’ve got
-                    the perfect vehicle to make your travel smooth and
-                    enjoyable.
-                  </p>
-                  <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
-                    With a commitment to quality and customer satisfaction, our
-                    fleet is regularly maintained and fully equipped to meet
-                    your needs. From compact cars to spacious SUVs, we ensure
-                    you find the right ride for any occasion.
-                  </p>
-                  <p className="text-gray-700 text-sm md:text-base tracking-wide leading-relaxed">
-                    Our team is here to support you every step of the way—making
-                    your rental experience seamless, safe, and stress-free.
-                    Drive with confidence, comfort, and complete peace of mind.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img
-                  src={car2}
-                  alt="Car"
-                  className="w-full h-auto object-contain rounded-xl"
-                />
-              </div>
             </div>
           </div>
 
@@ -131,6 +116,7 @@ const About = () => {
           </div>
         </div>
         <Satisfaction />
+        <SelfDrive />
       </div>
     </section>
   );

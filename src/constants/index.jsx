@@ -192,3 +192,25 @@ export const testimonials = [
     photo: profile8,
   },
 ];
+
+export const selfdrive = [
+  {
+    number: "01",
+    title: "Drive at Your Own Pace",
+    description:
+      "Enjoy the freedom of flexible travel. No driver, no schedule—just you and the open road.",
+  },
+  {
+    number: "02",
+    title: "Fully Sanitized & Ready to Go",
+    description:
+      "Every self-drive car is thoroughly cleaned, sanitized, and inspected before each ride for your peace of mind.",
+  },
+  {
+    number: "03",
+    title: "Modern Fleet, Maximum Comfort",
+    description:
+      "Choose from a wide range of premium vehicles with advanced features, plush interiors, and smooth handling—perfect for every journey.",
+  },
+];
+

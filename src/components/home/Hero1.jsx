@@ -25,7 +25,7 @@ const Hero1 = () => {
                 <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 text-center md:text-left md:leading-14">
                   Save big with <br />
                   <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
-                    Sri Karthikeya
+                    Karthikeya
                   </span>{" "}
                   car rentals
                 </h2>

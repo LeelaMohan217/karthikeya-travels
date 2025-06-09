@@ -5,6 +5,7 @@ import Vehicle from "../components/car/Vehicle";
 import Counters from "../components/counter/Counters";
 import Testimonial from "../components/testimonial/Testimonial";
 import ViewAllCars from "../components/car/ViewAllCars";
+import SelfDrive from "../components/selfdrive/SelfDrive";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Counters />
       <WhyRideWithUs />
       <Vehicle />
+      <SelfDrive />
       <ViewAllCars />
       <Testimonial />
     </>

@@ -8,18 +8,20 @@ const ViewAllCars = () => {
   return (
     <section className="w-full bg-neutral-100">
       <div className="max-w-7xl mx-auto px-6 py-20 xl:px-0">
-        
-        <div className="flex flex-col items-start gap-4 mb-16">
+        <div className="flex flex-col items-center gap-4 mb-16">
           <div className="flex items-center gap-2 bg-orange-100 py-1 px-4 rounded-full shadow-sm">
             <div className="w-2.5 h-2.5 rounded-full bg-orange-600 animate-ping" />
             <p className="uppercase font-semibold tracking-wide text-orange-600 text-sm">
               explore
             </p>
           </div>
-          <h2 className="max-w-3xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
-            Explore our wide range of cars.
+          <h2 className="max-w-4xl text-4xl md:text-5xl font-semibold text-slate-800 leading-tight">
+            Explore Our Wide Range Of{" "}
+            <span className="bg-gradient-to-r from-orange-600 via-red-600 to-yellow-500 bg-clip-text text-transparent">
+              Cars
+            </span>
           </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl">
+          <p className="text-base md:text-lg text-gray-600">
             Experience seamless travel with our modern, fully-inspected, and
             comfort-focused fleet—designed for smooth rides and unforgettable
             journeys.

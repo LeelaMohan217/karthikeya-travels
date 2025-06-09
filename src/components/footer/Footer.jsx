@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { platformLinks, communityLinks, helpfulLinks } from "../../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,10 +11,10 @@ const Footer = () => {
           <div className="grid items-start sm:grid-cols-3 gap-4 md:gap-6 lg:gap-10 border-b border-neutral-100 py-10 lg:py-12">
             <div className="flex flex-col items-start space-y-4">
               <h1 className="text-left text-2xl lg:text-3xl text-white font-bold">
-                Sri Karthikeya Travels
+                Karthikeya Travels
               </h1>
               <p className="text-left text-neutral-100 text-sm font-normal leading-6 tracking-wide">
-                At Sri Karthikeya Travels, we take pride in delivering a travel
+                At Karthikeya Travels, we take pride in delivering a travel
                 experience that’s built on trust, comfort, and reliability. Your
                 journey is our commitment — safe, simple, and seamless.
               </p>
@@ -39,12 +40,12 @@ const Footer = () => {
                 <ul className="space-y-2">
                   {communityLinks.map((link, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         className="text-neutral-100 text-sm hover:text-white font-normal tracking-wide"
-                        href={link.href}
+                        to={link.href}
                       >
                         {link.text}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -57,12 +58,12 @@ const Footer = () => {
                 <ul className="space-y-2">
                   {helpfulLinks.map((link, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         className="text-neutral-100 text-sm hover:text-white font-normal tracking-wider"
-                        href={link.href}
+                        to={link.href}
                       >
                         {link.text}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -84,12 +85,12 @@ const Footer = () => {
                 <div className="flex items-center gap-4">
                   <Mail className="text-neutral-100 w-5 h-5" />
                   <p className="text-neutral-100 text-sm">
-                    srikarthikeya@gmail.com
+                    karthikeya@gmail.com
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="text-neutral-100 w-5 h-5" />
-                  <p className="text-neutral-100 text-sm">+91 9876543210</p>
+                  <p className="text-neutral-100 text-sm">+91 9493427015</p>
                 </div>
               </div>
             </div>
@@ -97,7 +98,7 @@ const Footer = () => {
 
           <div className="my-6">
             <h6 className="text-neutral-100 text-sm font-normal text-center">
-              Copyright © 2025 Sri Karthikeya Travels. All rights reserved.
+              Copyright © 2025 Karthikeya Travels. All rights reserved.
             </h6>
           </div>
         </div>
