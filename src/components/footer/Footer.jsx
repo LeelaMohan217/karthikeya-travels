@@ -78,14 +78,14 @@ const Footer = () => {
                 <div className="flex items-start gap-4">
                   <MapPin className="text-neutral-100 w-10 h-10" />
                   <p className="text-neutral-100 text-sm  tracking-wide">
-                    Door No.5-69, Pedaparimi Village, Thullur Mandal, Guntur
-                    District, 522236, Andhra Pradesh
+                    Door No 126-230, Om Shakthi Communication Opposite,
+                    SambaSiva Complex, Amarvathi Road Gorantla,Guntur-522034
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="text-neutral-100 w-5 h-5" />
                   <p className="text-neutral-100 text-sm">
-                    karthikeya@gmail.com
+                    karthikeya4553@gmail.com
                   </p>
                 </div>
                 <div className="flex items-center gap-4">

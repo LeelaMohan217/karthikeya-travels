@@ -4,10 +4,9 @@ import Carcard from "../components/car/Carcard";
 import FormFill from "../components/form/FormFill";
 
 const groupedCars = {
-  Hatchback: cars.filter((car) => car.category === "Hatchback"),
+  MPV: cars.filter((car) => car.category === "MPV"),
   Sedan: cars.filter((car) => car.category === "Sedan"),
-  "Mini SUV": cars.filter((car) => car.category === "Mini SUV"),
-  MUV: cars.filter((car) => car.category === "MUV"),
+  SUV: cars.filter((car) => car.category === "SUV"),
 };
 
 const CarsPage = () => {

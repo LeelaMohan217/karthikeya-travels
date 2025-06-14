@@ -64,7 +64,7 @@ const ViewAllCars = () => {
             </div>
             <div className="w-full">
               <Link
-                to="/cars"
+                to="/carspage"
                 className="w-full block text-center px-5 py-3 text-base rounded-full bg-black opacity-90 hover:opacity-100 text-white transition-all duration-300 font-medium"
               >
                 Check Out All Cars

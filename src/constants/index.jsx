@@ -83,84 +83,75 @@ export const rideFeatures = [
   },
 ];
 
-import sedan from "../assets/cars/sedan.jpg";
+import carens from "../assets/cars/kiacarens.avif";
+import sonet from "../assets/cars/sonet.avif";
+import swiftdzire from "../assets/cars/swiftdzire.avif";
+import tatanexon from "../assets/cars/tatanexon.avif";
+import toyotainnova from "../assets/cars/toyotainnova.avif";
 export const cars = [
   {
     id: 1,
-    name: "Hyundai",
-    model: "i20 Sportz",
-    image: sedan,
-    category: "Hatchback",
+    name: "Kia",
+    model: "Carens",
+    image: carens,
+    category: "MPV",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+      "The Kia Carens is a versatile 7-seater MPV designed for maximum space, comfort, and style. Whether you’re going on a family trip or simply navigating city streets, the Carens offers a smooth ride, ample legroom, and advanced infotainment to keep everyone connected. Experience a blend of practicality and premium design, perfect for growing families.",
     fuelType: "petrol",
-    seatingCapacity: "5",
-    mileage: "10",
+    seatingCapacity: "7",
+    mileage: "12-15",
     driveType: "driver/self",
   },
   {
     id: 2,
-    name: "Baleno",
-    model: "Zeta 2024",
-    image: sedan,
-    category: "Sedan",
+    name: "Toyota",
+    model: "Innova",
+    image: toyotainnova,
+    category: "MPV",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+      "The Toyota Innova Crysta stands as a benchmark for comfortable family travel. With its powerful engine, sophisticated ride quality, and generous cabin space for 7 passengers, it's designed to make every journey enjoyable. Durable, reliable, and stylish — a true multi-purpose vehicle for both city commutes and long highway drives.",
     fuelType: "petrol",
-    seatingCapacity: "5",
-    mileage: "10",
+    seatingCapacity: "7",
+    mileage: "10-12",
     driveType: "driver/self",
   },
   {
     id: 3,
-    name: "Swift",
-    model: "VDI Diesel",
-    image: sedan,
-    category: "Hatchback",
+    name: "Tata",
+    model: "Nexon",
+    image: tatanexon,
+    category: "SUV",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+      "The Tata Nexon is a compact yet powerful 5-seater SUV, perfect for those who want a stylish ride without compromising on space or performance. Built with a strong body structure and numerous safety features, the Nexon offers a comfortable, stable ride across city roads and rough terrains alike. Get ready for your next adventure!",
     fuelType: "petrol",
     seatingCapacity: "5",
-    mileage: "10",
+    mileage: "16-18",
     driveType: "driver/self",
   },
   {
     id: 4,
-    name: "Kia",
-    model: "Sonet GT Line",
-    image: sedan,
-    category: "Mini SUV",
+    name: "Maruti Suzuki",
+    model: "Swift Dzire",
+    image: swiftdzire,
+    category: "Sedan",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+      "The Swift Dzire is a sophisticated and reliable sedan that combines power, mileage, and style in a compact package. With a comfortable cabin for 5, generous boot space, and a smooth ride, it's perfect for both daily commutes and weekend getaways. Experience a blend of practicality and prestige with the Swift Dzire!",
     fuelType: "petrol",
     seatingCapacity: "5",
-    mileage: "10",
+    mileage: "20-22",
     driveType: "driver/self",
   },
   {
     id: 5,
-    name: "Toyota Innova",
-    model: "Crysta",
-    image: sedan,
-    category: "MUV",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
-    fuelType: "petrol",
-    seatingCapacity: "5",
-    mileage: "10",
-    driveType: "driver/self",
-  },
-  {
-    id: 6,
     name: "Kia",
-    model: "Sonet GTX+",
-    image: sedan,
-    category: "Mini SUV",
+    model: "Sonet",
+    image: sonet,
+    category: "SUV",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem perspiciatis sunt nemo nostrum provident tempora odit ullam! Dolore illo repellat quidem est sed dolor ut totam nisi sunt. Harum?",
+      "The Kia Sonet stands out with its sporty design, high ground clearance, and numerous high-tech features. This 5-seater crossover is tailored for those who want a stylish ride without compromise. From its turbocharged engine to its premium infotainment, the Sonet guarantees a comfortable and connected driving experience for all.",
     fuelType: "petrol",
     seatingCapacity: "5",
-    mileage: "10",
+    mileage: "18-20",
     driveType: "driver/self",
   },
 ];
@@ -213,4 +204,3 @@ export const selfdrive = [
       "Choose from a wide range of premium vehicles with advanced features, plush interiors, and smooth handling—perfect for every journey.",
   },
 ];
-
