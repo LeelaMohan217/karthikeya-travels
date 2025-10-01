@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <a href="/" className="flex items-center flex-shrink-0">
                 <span className="text-2xl md:text-3xl sm:block tracking-tight text-orange-600 font-bold transition-colors duration-300">
-                  Karthikeya Rental
+                  Karthikeya Travels
                 </span>
               </a>
             </div>
