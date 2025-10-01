@@ -85,7 +85,7 @@ const Footer = () => {
                 <div className="flex items-center gap-4">
                   <Mail className="text-neutral-100 w-5 h-5" />
                   <p className="text-neutral-100 text-sm">
-                    karthikeya4553@gmail.com
+                    Karthikeyacartravels1@gmail.com
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
@@ -96,10 +96,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="my-6">
-            <h6 className="text-neutral-100 text-sm font-normal text-center">
-              Copyright © 2025 Karthikeya Travels. All rights reserved.
-            </h6>
+          <div className="grid grid-cols-3 gap-8 my-6">
+            <div className="col-span-2">
+              <h6 className="text-neutral-100 text-sm font-normal">
+                Copyright © 2025 Karthikeya Travels. All rights reserved.
+              </h6>
+            </div>
+            <div className="col-span-1">
+              <h6 className="text-neutral-100 text-sm font-normal text-end">
+                Developed and maintained by J-Monk Devops
+              </h6>
+            </div>
           </div>
         </div>
       </footer>
