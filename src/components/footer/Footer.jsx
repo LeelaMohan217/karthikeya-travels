@@ -96,14 +96,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 my-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-6">
             <div className="col-span-2">
-              <h6 className="text-neutral-100 text-sm font-normal">
+              <h6 className="text-neutral-100 text-sm font-normal text-center md:text-start">
                 Copyright © 2025 Karthikeya Travels. All rights reserved.
               </h6>
             </div>
             <div className="col-span-1">
-              <h6 className="text-neutral-100 text-sm font-normal text-end">
+              <h6 className="text-neutral-100 text-sm font-normal md:text-end text-center">
                 Developed and maintained by J-Monk Devops
               </h6>
             </div>
