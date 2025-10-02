@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  CarFrontIcon,
-  CarTaxiFrontIcon,
-  FuelIcon,
-  PersonStanding,
-} from "lucide-react";
+import { CarFrontIcon, FuelIcon, PersonStanding } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const IndividualCarDetails = ({ car }) => {
@@ -21,10 +16,10 @@ const IndividualCarDetails = ({ car }) => {
             <p className="text-gray-800 text-sm md:text-base">
               {car.description || "No description provided for this vehicle."}
             </p>
-            <div className="mt-4 flex justify-center">
+            <div className="mt-4 flex justify-center w-full text-center">
               <Link
                 to="/form"
-                className="px-5 py-3 rounded-full bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg"
+                className="w-full px-5 py-3 rounded-full bg-orange-600 text-white hover:bg-orange-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg"
               >
                 Book Now
               </Link>
